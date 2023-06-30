@@ -21,6 +21,10 @@ export const Styles = StyleSheet.create({
     alignItems: "center",
     margin: 8,
   },
+  clockLogo: {
+    width: 70,
+    height: 70,
+  },
   btnAccent: {
     width: 72,
     height: 72,

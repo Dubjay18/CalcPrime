@@ -25,4 +25,5 @@ export const myColors = {
   other: "#add9d8",
   gray: "#747477",
   result: "#46D5B2",
+  clock: "#0048B5",
 };
