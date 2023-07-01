@@ -6,11 +6,6 @@ import MyKeyboard from "../components/MyKeyboard";
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <View
-        style={styles.separator}
-        lightColor='#eee'
-        darkColor='rgba(255,255,255,0.1)'
-      />
       <MyKeyboard />
     </View>
   );

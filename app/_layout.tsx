@@ -15,6 +15,7 @@ import {
   Image,
 } from "react-native";
 import { myColors } from "../constants/Colors";
+import { Text } from "../components/Themed";
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,
@@ -27,7 +28,7 @@ export const unstable_settings = {
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    SpaceMono: require("../assets/fonts/FontsFree-Net-Gilroy2.ttf"),
     ...FontAwesome.font,
   });
 
@@ -96,7 +97,19 @@ function RootLayoutNav() {
           />
           <Stack.Screen
             name='modal'
-            options={{ presentation: "modal" }}
+            options={{
+              presentation: "modal",
+              headerTitle: () => (
+                <Text
+                  style={{
+                    color: "black",
+                    fontSize: 24,
+                    fontWeight: "400",
+                  }}>
+                  Settings
+                </Text>
+              ),
+            }}
           />
         </Stack>
       </ThemeProvider>
