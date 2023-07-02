@@ -1,5 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import { Platform, StyleSheet } from "react-native";
+import {
+  ImageBackground,
+  Platform,
+  StyleSheet,
+} from "react-native";
 
 import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
@@ -15,6 +19,7 @@ import { GilroyText } from "../components/StyledText";
 export default function ModalScreen() {
   return (
     <View style={styles.container}>
+      {/* <ImageBackground source={("../assets/calculator")}/> */}
       <View style={{ height: 20 }} />
       <View style={{ height: 20 }} />
       <View style={Styles.settingsOptionContainer}>
