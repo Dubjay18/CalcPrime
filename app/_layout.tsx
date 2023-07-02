@@ -16,6 +16,7 @@ import {
 } from "react-native";
 import { myColors } from "../constants/Colors";
 import { Text } from "../components/Themed";
+import { Clock, Setting4 } from "iconsax-react-native";
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,
@@ -65,14 +66,19 @@ function RootLayoutNav() {
                 //   style={Styles.clockLogo}
                 //   source={require("../../assets/images/clock.svg")}
                 // />
-                <FontAwesome
-                  name='clock-o'
-                  size={25}
+                // <FontAwesome
+                //   name='clock-o'
+                //   size={25}
+                //   color={myColors.clock}
+                //   // style={{
+                //   //   marginRight: 15,
+                //   //   opacity: pressed ? 0.5 : 1,
+                //   // }}
+                // />
+                <Clock
+                  size='32'
                   color={myColors.clock}
-                  // style={{
-                  //   marginRight: 15,
-                  //   opacity: pressed ? 0.5 : 1,
-                  // }}
+                  variant='Outline'
                 />
               ),
 
@@ -80,10 +86,10 @@ function RootLayoutNav() {
                 <Link href='/modal' asChild>
                   <Pressable>
                     {({ pressed }) => (
-                      <FontAwesome
-                        name='info-circle'
-                        size={25}
+                      <Setting4
+                        size='32'
                         color={myColors.clock}
+                        variant='Outline'
                         style={{
                           marginRight: 15,
                           opacity: pressed ? 0.5 : 1,

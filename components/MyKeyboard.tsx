@@ -129,6 +129,7 @@ export default function MyKeyboard() {
         }}>
         <Text style={Styles.screenSecondNumber}>
           {secondNumber}
+
           <Text
             style={{
               color: "purple",
