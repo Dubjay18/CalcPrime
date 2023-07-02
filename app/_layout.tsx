@@ -29,7 +29,7 @@ export const unstable_settings = {
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require("../assets/fonts/FontsFree-Net-Gilroy2.ttf"),
+    Gilroy: require("../assets/fonts/FontsFree-Net-Gilroy2.ttf"),
     ...FontAwesome.font,
   });
 
@@ -66,30 +66,35 @@ function RootLayoutNav() {
                 //   style={Styles.clockLogo}
                 //   source={require("../../assets/images/clock.svg")}
                 // />
-                // <FontAwesome
-                //   name='clock-o'
-                //   size={25}
-                //   color={myColors.clock}
-                //   // style={{
-                //   //   marginRight: 15,
-                //   //   opacity: pressed ? 0.5 : 1,
-                //   // }}
-                // />
-                <Clock
-                  size='32'
+                <FontAwesome
+                  name='clock-o'
+                  size={25}
                   color={myColors.clock}
-                  variant='Outline'
                 />
+                // <Clock
+                //   size='32'
+                //   color={myColors.clock}
+                //   variant='Outline'
+                // />
               ),
 
               headerRight: () => (
                 <Link href='/modal' asChild>
                   <Pressable>
                     {({ pressed }) => (
-                      <Setting4
-                        size='32'
+                      // <Setting4
+                      //   size='32'
+                      //   color={myColors.clock}
+                      //   variant='Outline'
+                      //   style={{
+                      //     marginRight: 15,
+                      //     opacity: pressed ? 0.5 : 1,
+                      //   }}
+                      // />
+                      <FontAwesome
+                        name='info'
+                        size={25}
                         color={myColors.clock}
-                        variant='Outline'
                         style={{
                           marginRight: 15,
                           opacity: pressed ? 0.5 : 1,

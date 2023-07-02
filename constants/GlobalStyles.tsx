@@ -59,4 +59,20 @@ export const Styles = StyleSheet.create({
     fontWeight: "200",
     alignSelf: "flex-end",
   },
+  settingsOption: {
+    display: "flex",
+    flexDirection: "row",
+    gap: 40,
+    padding: 10,
+
+    color: Colors.light.text,
+    width: "100%",
+    alignItems: "center",
+  },
+  settingsOptionContainer: {
+    display: "flex",
+
+    width: 350,
+    borderRadius: 20,
+  },
 });
