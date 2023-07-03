@@ -8,10 +8,10 @@ import {
 import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
 import { Styles } from "../constants/GlobalStyles";
-import {
-  Calculator,
-  ArrowRight2,
-} from "iconsax-react-native";
+// import {
+//   Calculator,
+//   ArrowRight2,
+// } from "iconsax-react-native";
 import { myColors } from "../constants/Colors";
 import { FontAwesome } from "@expo/vector-icons";
 import { GilroyText } from "../components/StyledText";
